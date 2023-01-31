@@ -1,4 +1,4 @@
-resource "aws_vpc" "myvpc" {
+/* resource "aws_vpc" "myvpc" {
   cidr_block = "10.0.0.0/16"
   tags = {
     "Name" : "myvpc"
@@ -38,7 +38,6 @@ resource "aws_route" "my_default_route" {
 resource "aws_route_table_association" "my_public_assoc" {
   subnet_id      = aws_subnet.my_public_subnet.id
   route_table_id = aws_route_table.my_public_rt.id
-
 }
 
 resource "aws_security_group" "my_sg" {
@@ -66,4 +65,4 @@ resource "aws_security_group" "my_sg" {
   tags = {
     "Name" : "my_sg"
   }
-}
+} */
